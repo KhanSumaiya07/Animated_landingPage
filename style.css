@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(245, 213, 219);
+}
+
+header {
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav .left h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+nav .left span {
+    font-weight: 200;
+}
+
+nav .mid {
+    padding-left: 250px;
+    padding-right: 360px;
+    display: flex;
+    gap: 20px;
+}
+
+nav .mid a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    text-transform: uppercase;
+}
+
+nav .right {
+    display: flex;
+    gap: 15px;
+
+}
+
+nav .right i {
+    font-size: 20px;
+}
+
+section {
+    display: flex;
+    position: relative;
+    padding: 0px 30px 0 50px;
+}
+
+section .left {
+    height: 500px;
+    width: 30%;
+    position: relative;
+}
+
+section .left h2 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    animation: anime_h2 4s 2s;
+}
+
+@keyframes anime_h2 {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 10%;
+    }
+}
+
+section .left .text {
+    color: rgb(255, 0, 51);
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 10;
+    margin: 30px 0;
+    position: absolute;
+    animation-name: anime_texth1;
+    animation-delay: 2s;
+    animation-duration: 4s;
+}
+
+section .left .text h1 {
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 10px;
+
+}
+
+@keyframes anime_texth1 {
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        top: 10%;
+    }
+}
+
+section .left .content {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    animation: anime_content 3s 2s;
+}
+@keyframes anime_content {
+    0%{
+        gap: 70px;
+    }
+    100%{
+        gap: 30px;
+    }
+}
+section .left .content h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+section .right {
+    width: 70%;
+}
+
+section .right .box {
+    height: 500px;
+    width: 900px;
+    background-image: url("https://static.toiimg.com/photo/98593107.cms");
+    background-size: cover;
+    position: absolute;
+    animation: anime_boximg 4s 2s;
+}
+
+@keyframes anime_boximg {
+    0% {
+        top: -70%;
+        background-image: url("https://static.toiimg.com/photo/98593107.cms");
+    }
+
+    100% {
+        background-image: url("volcanoes.png");
+        top: 0%;
+    }
+}
+
+section .right .box h1 {
+    position: absolute;
+    bottom: 17%;
+    right: 6%;
+    font-size: 35px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+section .right .box .card {
+    height: 60px;
+    width: 250px;
+    background-color: rgb(255, 0, 51);
+    position: absolute;
+    top: 95%;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    color: white;
+    animation: anime_card 4s 2s;
+}
+
+@keyframes anime_card {
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        top: 95%;
+    }
+}
+
+section .right .box .card h3 {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+section .minibox {
+    height: 160px;
+    width: 140px;
+    background-image: url("volcanoes1.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 60%;
+    left: 27%;
+    animation-name: anime_minibox;
+    animation-delay: 2s;
+    animation-duration: 4s;
+}
+
+.icons {
+    position: absolute;
+    bottom: 0%;
+    left: 10%;
+    display: flex;
+    gap: 20px;
+    color: white;
+    animation: anime_icons 4s 2s;
+}
+@keyframes anime_icons {
+    0%{
+        bottom: -100%;
+    }
+    100%{
+        bottom: 0%;
+    }
+}
+
+.icons .circle {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 0, 51);
+    border-radius: 50%;
+    position: relative;
+}
+
+.icons .circle:nth-child(2) {
+    background-color: gray;
+}
+
+.icons .circle i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+@keyframes anime_minibox {
+    0% {
+        background-image: url("volcanoes1.png");
+        top: -100%;
+    }
+
+    100% {
+        background-image: url("https://images.newscientist.com/wp-content/uploads/2015/10/dn28287-1_800.jpg?width=800");
+        top: 60%;
+    }
+}
